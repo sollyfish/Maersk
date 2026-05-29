@@ -21,7 +21,7 @@ def resource_path(relative_path: str) -> str:
 def load_zip3_shapes():
     gdf = gpd.read_file(
         resource_path("shapefiles/zip3_simplified.gpkg"),
-        engine="fiona"  # more stable on Streamlit Cloud
+        engine="pyogrio"  # more stable on Streamlit Cloud
     )
     gdf["zip3"] = gdf["zip3"].astype(str).str.zfill(3)
     return gdf
@@ -79,7 +79,7 @@ def process_data(origin_list, customer_name):
     # State boundaries (lightweight, OK to reload)
     states = gpd.read_file(
         resource_path("shapefiles/states_preprocessed.gpkg"),
-        engine="fiona"
+        engine="pyogrio"
     )
     states.boundary.plot(ax=ax, linewidth=0.5, edgecolor="black")
 
