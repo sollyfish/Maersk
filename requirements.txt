@@ -9,3 +9,4 @@ rtree
 openpyxl
 streamlit-sortables
 folium
+pyogrio
