@@ -166,7 +166,7 @@ def warehouse_map_app():
     # State boundaries
     states = gpd.read_file(
         resource_path("shapefiles/states_preprocessed.gpkg"),
-        engine="fiona"
+        engine="pyogrio"
     )
     states.boundary.plot(ax=ax, linewidth=0.5, edgecolor="black")
 
