@@ -279,7 +279,14 @@ def zone_map_app():
                 break  # stop at end of template
         
             zip5 = str(val).strip().zfill(5)
+
+            # Force Column A to display as 5-digit ZIP in output Excel
+            cell = ws.cell(row=r, column=1)
+            cell.value = int(zip5)
+            cell.number_format = "00000"
+
             template_rows.append((r, zip5))
+        
                 
         # ================================
         # ✍️ WRITE DATA (DO NOT TOUCH COL A)
