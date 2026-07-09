@@ -69,9 +69,15 @@ def process_data(origin_list, customer_name):
     # Step 4: Plot
     progress_text.info("Rendering map...")
     zone_colors = {
-        1: "#001624", 2: "#00243D", 3: "#004A73",
-        4: "#0073AB", 5: "#2392BE", 6: "#42B0D5",
-        7: "#72C8E3", 8: "#A1D8EF", 9: "#B5E0F5"
+    1: "#5B3A29",  # Dark brown
+    2: "#7B4FA3",  # Purple
+    3: "#C44E52",  # Red
+    4: "#E58A35",  # Orange
+    5: "#D6B32C",  # Gold
+    6: "#5B8C3A",  # Green
+    7: "#555555",  # Charcoal gray
+    8: "#3973B7",  # Strong blue
+    9: "#C76D9B"   # Dusty pink
     }
 
     fig, ax = plt.subplots(figsize=(15, 10))
