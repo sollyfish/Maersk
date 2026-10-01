@@ -757,7 +757,7 @@ def zone_map_app():
                 row=header_row,
                 column=current_col,
                 value=(
-                    f"{origin} - Standard TNT"
+                    f"{origin} - Maersk Standard TNT"
                 )
             )
 
@@ -778,7 +778,7 @@ def zone_map_app():
                 row=header_row,
                 column=current_col,
                 value=(
-                    f"{origin} - Expedited TNT"
+                    f"{origin} - Maersk Expedited TNT"
                 )
             )
 
