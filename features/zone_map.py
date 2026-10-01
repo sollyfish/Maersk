@@ -36,8 +36,8 @@ EXPEDITED_TNT = {
     5: "2-4 Days",
     6: "2-4 Days",
     7: "3-5 Days",
-    8: "Up to 5 Days",
-    9: "Up to 7 Days"
+    8: "4-5 Days",
+    9: "4-6 Days"
 }
 
 
